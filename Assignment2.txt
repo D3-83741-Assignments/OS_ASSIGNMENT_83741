@@ -1,0 +1,160 @@
+Q1-List all the directory contents date wise sorted
+total 64
+-rw-rw-r-- 1 avadhut avadhut   602 Jun  2 15:34 Assignment2.txt
+-rw-rw-r-- 1 avadhut avadhut 12900 May 31 23:21 Assignment1
+-rw-rw-r-- 1 avadhut avadhut    55 May 31 23:05 FiletoCopyRenamed.txt
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:47 STAMP
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:47 time
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:46 file1.txt
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:46 file2.txt
+drwxrwxr-x 2 avadhut avadhut  4096 May 31 19:04 Dirtocopy
+-rw-rw-r-- 1 avadhut avadhut 32911 May 31 18:19 temp.txt
+
+
+Q2-List all the directory contents size wise sorted
+Output:-
+total 60
+-rw-rw-r-- 1 avadhut avadhut 32911 May 31 18:19 temp.txt
+-rw-rw-r-- 1 avadhut avadhut 12900 May 31 23:21 Assignment1
+drwxrwxr-x 2 avadhut avadhut  4096 May 31 19:04 Dirtocopy
+-rw-rw-r-- 1 avadhut avadhut    55 May 31 23:05 FiletoCopyRenamed.txt
+-rw-rw-r-- 1 avadhut avadhut     0 Jun  2 15:32 Assignment2.txt
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:46 file1.txt
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:46 file2.txt
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:47 STAMP
+-rw-rw-r-- 1 avadhut avadhut     0 May 31 21:47 time
+
+Q3-List directory contents along with their inode no.
+Output- 
+3802987 Assignment1
+3817201 Assignment2.txt
+3816465 Dirtocopy
+3815461 file1.txt
+3815462 file2.txt
+3802900 FiletoCopyRenamed.txt
+3815464 STAMP
+3816461 temp.txt
+3815463 time
+
+Q4- List the contents of the subdirectory.
+Output-  
+111.txt
+11.txt
+1.txt
+
+Q5- Create a file, write your surname and name in it and save it 
+Command-
+For File create- touch SelfInfo.txt
+for Add Info- cat>>SelfInfo.txt 
+LastName -Sakhare
+First Name - Avadhut
+For save Info- ctrl+D to save 
+For Add Address - cat>>SelfInfo.txt 
+Address - Karad
+For Save - Ctrl+D
+For reopen- Open SelfInfo.txt 
+Output : 
+LastName -Sakhare
+First Name - Avadhut
+Address -karad
+
+Q6-how to change the time stamp of file
+Command- touch -t [yy/mm/dd]time filename
+Output- 
+
+
+Q7 - Create directory structure : Give following commands:
+Commands - 
+mkdir one 
+cd one
+touch 1.txt 11.txt 111.txt 
+cd ..
+
+mkdir two 
+cd two
+touch 2.txt 22.txt 222.txt 
+cd ..
+
+mkdir three 
+cd three
+touch 3.txt 33.txt 333.txt 
+cd ..
+
+mkdir four
+cd four
+touch 4.txt 44.txt 444.txt 
+cd ..
+
+mkdir five 
+cd five
+touch 5.txt 55.txt 55.txt 
+..
+
+
+i. list the directory contents of directory named "five" from current directory
+Command - ls Assigment/OSASSIGNMENT/Assignment2/five
+Output - 5.txt 55.txt 55.txt 
+
+ii- write your name in a file named "44.txt" of directory "four" from current directory.
+Command- cat>>Assigment/OSASSIGNMENT/Assignment2/four/44.txt
+Output -Avadhut
+
+
+iii. remove the file named "555.txt" from directory "five" from current directory
+Before Command - ls Assigment/OSASSIGNMENT/Assignment2/five
+555.txt  55.txt  5.txt
+Command- rm Assigment/OSASSIGNMENT/Assignment2/five/555.txt
+Output - ls Assigment/OSASSIGNMENT/Assignment2/five
+55.txt  5.txt
+
+iv. change directory to five
+Command-  cd Assigment/OSASSIGNMENT/Assignment2/five
+
+v. write your course name in file named "3.txt" which resides in directory "three" from current directory
+Command- cat>>../three/3.txt
+Course name - Operating System
+
+Command for read file -cat ../three/3.txt
+
+vi. list the contents of directory "two" from current directory
+Command - ls ../two 
+Output- 222.txt  22.txt  2.txt
+
+vii. remove file named "222.txt" which belongs to directory "two" from current directory (i.e. five)
+Command- rm ../two/222.txt
+Output - ls ../two
+22.txt  2.txt
+
+viii. now change the directory to "one"
+Command - cd ../one
+Output - pwd
+/home/avadhut/Assigment/OSASSIGNMENT/Assignment2/one
+
+ix. remove all files only from directory named "five" from current directory (i.e. one)
+Command - rm ../five/55.txt
+Output -ls ../five
+
+x. remove directory named "five" from current directory (i.e. one)
+Command - rmdir ../five
+Output- ls ../
+four  one  three  two
+
+xi. remove whole directory named "four" from current directory (i.e. one)
+Command -
+rm ../four/4.txt
+rm ../four/44.txt
+rm ../four/444.txt
+rmdir  ../four
+
+Output -ls ../
+one  three  two
+
+xii. change to your home directory.
+Command - cd
+
+9. change the time stamp of file named "3.txt" which resides in directory named "three".(man touch)
+Command -touch -t 202406010924 Assigment/OSASSIGNMENT/Assignment2/three/3.txt
+Output-  Saturday 01 June 2024 09∶24∶00 AM
+
+
+
