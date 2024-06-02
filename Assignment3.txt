@@ -1,0 +1,193 @@
+Q1. Display hidden files
+Command: ls -A
+Output- .hiddenfile
+
+Q2- Rename all ".txt" files to ".htm"
+Command-
+
+
+
+Q3.Create symbolic link (shortcut) for a file
+Command-
+Output-
+
+Q4. Create hard link for a file
+Command-
+Output-
+
+Q5.Display time stamp of the file
+Command- stat file1.txt 
+Output- 
+  File: file1.txt -> file.txt
+  Size: 8         	Blocks: 0          IO Block: 4096   symbolic link
+Device: 804h/2052d	Inode: 3817233     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/ avadhut)   Gid: ( 1000/ avadhut)
+Access: 2024-06-02 20:46:35.553416110 +0530
+Modify: 2024-06-02 20:46:18.897219954 +0530
+Change: 2024-06-02 20:46:18.897219954 +0530
+ Birth: 2024-06-02 20:46:18.897219954 +0530
+
+
+Q6. Change the time stamp of the file
+Command- touch -t 202402051212 file1.txt
+Output- Monday 05 February 2024 12∶12∶00 PM
+
+
+Q7. Create empty file
+Command- touch emptyfile.txt
+Output- 1.txt  2.txt  4.txt  Assignment3.txt  empty.txt  file1.txt
+
+
+Q8. Print all lines in a file from fifth line onwards
+Command- tail -n +6 1.txt 
+Output-
+6. Bears lumber through forests, symbols of strength and solitude.
+7. Horses gallop freely, embodying elegance and power.
+8. Dolphins dance in waves, playful spirits of the sea.
+9. Lions roar fiercely, rulers of the African plains.
+10. Monkeys swing through trees, mischievous antics in the jungle canopy.
+
+
+Q9. init 0 
+Command- poweroff
+Output-shutdown
+
+
+Q10- init 6
+Command-
+Output-Reboot of system
+
+
+Q11- Find current user
+Command-whoami
+Output- avadhut
+
+Q12- find current terminal
+Command- tty 
+Output- /dev/pts/0
+
+
+Q13- find current user and terminal
+Command-
+Output-
+
+
+Q14- find all users logged in system
+Command-users
+Output-avadhut
+
+Q15- Find all users logged in and terminals in use
+Command- who
+output- avadhut  :1           2024-06-02 18:52 (:1)
+
+Q16. Find all users logged in and terminals in use
+Command-users Output - avadhut
+Command - tty Output- /dev/pts/0
+
+Q17-
+Command-
+Output-
+
+
+Q17. Find a given word/pattern from the file
+Command- fgrep "file" data.txt 
+Output-
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+command - grep "have" data.txt 
+Output-
+files have permissions.
+files have inode no.
+files have size.
+
+command- egrep "files" data.txt
+output- egrep "files" data.txt 
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+Q18- Make a file as read-only
+Command- chmod -r sample1.txt
+Output- 
+
+Q19- Make a file as write, read and execute
+Command- chmod -r -w -x sample1.txt
+Output-
+
+
+Q20. Take input from the file, count words and store output to other file
+Command- wc -w a1.txt>>a2.txt
+Output- 6
+
+Q21. Count words in output of “who” command
+Command- who | wc -w
+Output- 5
+
+
+Q22. Print lines 5 to 10 from the given file
+Command-  head -10 1.txt|tail -n -5
+Output-
+6. Bears lumber through forests, symbols of strength and solitude.
+7. Horses gallop freely, embodying elegance and power.
+8. Dolphins dance in waves, playful spirits of the sea.
+9. Lions roar fiercely, rulers of the African plains.
+10. Monkeys swing through trees, mischievous antics in the jungle canopy.
+
+
+Command-
+Output-
+
+
+
+
+Command-
+Output-
+
+
+
+Command-
+Output-
+
+
+
+Command-
+Output-
+
+
+
+Command-
+Output-
+
+
+
+Command-
+Output-
+
+
+
+Command-
+Output-
+
+
+
+
+Command-
+Output-
+
+
+
+
+Command-
+Output-
+
+
+
+
+
+Command-
+Output-
