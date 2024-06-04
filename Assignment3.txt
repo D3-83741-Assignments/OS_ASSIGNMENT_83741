@@ -138,56 +138,68 @@ Output-
 9. Lions roar fiercely, rulers of the African plains.
 10. Monkeys swing through trees, mischievous antics in the jungle canopy.
 
+Q23. Print the uniq values from the unsorted file
+Command- sort FiletoCopyRenamed.txt |uniq 
+Output-
+Be Happy!!!
+Hello !
+Nice to meet you:
 
+
+Q24.Display all users not using tty2, tty3, tty4
 Command-
 Output-
 
 
+Q25. Display all files in ascending order of their file size
+Command- ls -l -S -r
+Output- ---------- 1 avadhut avadhut   0 Jun  2 22:28 sample1.txt
+-rw-rw-r-- 1 avadhut avadhut   4 Jun  2 23:03 a2.txt
+-rw-rw-r-- 1 avadhut avadhut  12 Jun  2 22:30 sample1.tx
+--w--w---- 1 avadhut avadhut  49 Jun  2 22:26 sample.txt
+-rw-rw-r-- 1 avadhut avadhut  55 May 31 23:05 FiletoCopyRenamed.txt
+-rw-rw-r-- 1 avadhut avadhut  66 Jun  2 22:36 a1.txt
+-rw-rw-r-- 1 avadhut avadhut 145 Jun  2 20:26 data.txt
+-rw-rw-r-- 1 avadhut avadhut 267 Jun  2 20:25 Assignment4.txt
+-rw-rw-r-- 1 avadhut avadhut 451 Jun  2 14:03 demo03.sh
+-rw-rw-r-- 1 avadhut avadhut 583 Jun  2 22:57 1.txt
 
 
+
+Q26. Count number of files and directories from current directory
 Command-
+Output -
+
+Q27. Display only hidden files in a directory
+Command-ls -A | egrep "^[.]" 
+Output- .1.txt
+
+Q28. Convert file contents into uppercase , also learn "-s" option of this command
+Hello !
+Hello !
+Hello !
+Nice to meet you:
+Be Happy!!!
+Command- cat FiletoCopyRenamed.txt | tr "a-z" "A-Z" >>FiletoCopyRenamed.txt 
+Output-HELLO !
+HELLO !
+HELLO !
+NICE TO MEET YOU:
+BE HAPPY!!!
+
+
+
+Q29. Split the file contents using delimiter and print required fields
+Command- cut -d " " -f 1,1 FiletoCopyRenamed.txt 
 Output-
-
-
-
-Command-
-Output-
-
-
-
-Command-
-Output-
-
-
-
-Command-
-Output-
-
-
-
-Command-
-Output-
-
-
-
-Command-
-Output-
-
-
-
-
-Command-
-Output-
-
-
-
-
-Command-
-Output-
+HELLO
+HELLO
+HELLO
+NICE
+BE
 
 
 
 
 
-Command-
-Output-
+

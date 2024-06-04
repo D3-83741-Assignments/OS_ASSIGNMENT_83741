@@ -1,0 +1,80 @@
+1. count the no. of words ,characters and lines from above 2 file.
+command- wc data.txt 
+output - 6  25 145 data.txt
+  
+  
+2. list the lines having word "files" (man grep)
+Command- egrep "files" data.txt 
+Output -
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+3. list the lines having word "file" (man grep)
+Command -egrep "file" data.txt 
+Output -
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+
+4. list the lines which don't have word "files" (man grep)
+Command - egrep -v  "files" data.txt 
+Output -
+Linux is open source.
+In Linux everything is file
+
+
+
+5. list the lines having word "have" . (man grep)
+Command - egrep "have" data.txt 
+Output -
+files have permissions.
+files have inode no.
+files have size.
+
+
+6. list the lines starts with letter "f" (man grep)
+Command - egrep   "^f" data.txt 
+Output -
+files have permissions.
+files have inode no.
+files have size.
+
+
+7. list the lines ends with "." (man grep)
+Command - egrep   "\.$" data.txt 
+Output -
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+
+
+8. list only first two lines.(man head)
+Command -  head -n -2 data.txt 
+Output - 
+Linux is open source.
+In Linux everything is file
+
+
+9. list only last three lines.(man tail)
+Command -tail -n -3 data.txt 
+Output -
+files have inode no.
+files have size.
+there are several types of files
+
+
+10. list line no.3,4 and 5 . (man head and tail)
+Command -head -5 data.txt | tail +3
+Output -
+files have permissions.
+files have inode no.
+files have size.
+
